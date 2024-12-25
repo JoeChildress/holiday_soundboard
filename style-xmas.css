@@ -1,0 +1,266 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  color: #dff0f9;
+  font-family: sans-serif;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* 9. Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+html {
+  font-size: 14px;
+
+  background: #011933 url('img/background_snowmen.jpg') no-repeat -150px center fixed;
+  -webkit-background-size: auto 140%;
+  -moz-background-size: auto 140%;
+  -o-background-size: auto 140%;
+  background-size: auto 140%;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+.site-wrapper {
+  width: 100%;
+  height: 100vh;
+  /* border: 1px dashed cyan; */
+  background-color: rgba(2, 25, 51, 0.8);
+}
+header {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+header .headline {
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  /* border: 1px solid #ec5af6; */
+}
+
+header h1 {
+  font-size: 2.4rem;
+  font-family: 'Berkshire Swash', cursive;
+  letter-spacing: 0rem;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 0rem;
+  line-height: 1.2;
+}
+
+header .instructions {
+  font-size: 0.8rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+}
+.button-row {
+  width: 100%;
+  min-width: 350px;
+  text-align: center;
+  margin-bottom: 8px;
+  /* border: 1px solid lightblue; */
+}
+
+.button-row .title {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #efe094;
+  width: 100%;
+  margin: 0;
+}
+
+/* controls button alignment */
+.button-row .keys-wrapper {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 350px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  /* border: 1px solid #d7ed75; */
+}
+
+.button-row .key-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: #7575ed solid 1px;
+  border-radius: 0.5rem;
+  height: 5rem;
+  width: 7rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  transition: all 0.07s ease;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 0.5rem black;
+  margin-bottom: 0.2rem;
+}
+.button-row .family .key-button {
+  background: rgba(4, 154, 16, 0.8);
+}
+.button-row .percussion .key-button {
+  height: 5rem;
+  width: 7rem;
+  background: rgba(152, 39, 39, 0.8);
+}
+
+.button-row .loops .key-button {
+  background: rgba(25, 144, 218, 0.9);
+}
+KBD {
+  display: none;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.key-button .sound-title {
+  font-size: 1.2rem;
+  text-transform: lowercase;
+  line-height: 1.3rem;
+  padding-bottom: 2px;
+}
+
+.key-button .name {
+  display: block;
+  color: #bcbcf7;
+}
+
+.pressed {
+  transform: scale(1.1);
+  border-color: darkkhaki;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+@media only screen and (min-width: 390px) {
+  /* For tablets: */
+  html {
+    font-size: 16px;
+  }
+  header {
+    margin-bottom: 30px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .button-row .title {
+    font-size: 1.3rem;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  /* For tablets: */
+  html {
+    font-size: 22px;
+  }
+  header {
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+  .button-row .title {
+    font-size: 1rem;
+  }
+  .content-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /* For tablets: */
+  html {
+    background: #011933 url('img/background_snowmen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  header {
+    padding-top: 20px;
+    margin-bottom: 90px;
+  }
+  header h1 {
+    font-size: 6rem;
+  }
+
+  .content-wrapper {
+    height: 50vh;
+  }
+
+  .button-row .title {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+}

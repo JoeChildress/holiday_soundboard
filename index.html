@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Childress Christmas Soundfun</title>
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link rel="stylesheet" href="style-xmas.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <header>
+      <div class="headline">
+        <h1>Sounds of Childristmas</h1>
+        <p class="instructions">A holiday sound board with loops, perscusson and Childresseses.</p>
+      </div>
+    </header>
+    <main class="content-wrapper">
+      <!--    LOOPS-->
+      <div class="button-row">
+        <div class="title">LOOPS</div>
+        <div class="keys-wrapper loops">
+          <button data-key="86" data-loop="true" class="key-button">
+            <kbd>V</kbd>
+            <span class="sound-title">sleigh bells</span>
+          </button>
+          <button data-key="66" data-loop="true" class="key-button">
+            <kbd>B</kbd>
+            <span class="sound-title">charlie brown</span>
+          </button>
+          <button data-key="78" data-loop="true" class="key-button">
+            <kbd>N</kbd>
+            <span class="sound-title">run dmc</span>
+          </button>
+        </div>
+      </div>
+      <!--    FAMILY -->
+      <div class="button-row first">
+        <div class="title">FAMILY
+        </div>
+        <div class="keys-wrapper family">
+          <button data-key="82" class="key-button">
+            <div class="btn-content">
+              <span class="sound-title">Ho Ho Ho</span>
+              <span class="name">Cecelia</span>
+              <kbd>R</kbd>
+            </div>
+          </button>
+          <button data-key="84" class="key-button">
+
+            <span class="sound-title">Rudolf</span>
+            <span class="name">Molly</span> <kbd>T</kbd>
+          </button>
+          <button data-key="89" class="key-button">
+
+            <span class="sound-title">Bing Bong</span>
+            <span class="name">Jack</span> <kbd>Y</kbd>
+          </button>
+          <button data-key="85" class="key-button">
+
+            <span class="sound-title">Happy Holidays</span>
+            <span class="name">Jesse</span> <kbd>U</kbd>
+          </button>
+          <button data-key="73" class="key-button">
+
+            <span class="sound-title">Merry Christmas</span>
+            <span class="name">Famliy</span> <kbd>I</kbd>
+          </button>
+        </div>
+      </div>
+      <!--    DRUM KIT-->
+      <div class="button-row">
+        <div class="title">PERCUSSIAN</div>
+        <div class="keys-wrapper percussion">
+          <button data-key="65" class="key-button">
+            <kbd>A</kbd>
+            <span class="sound-title">clap</span>
+          </button>
+          <button data-key="83" class="key-button">
+            <kbd>S</kbd>
+            <span class="sound-title">hihat</span>
+          </button>
+          <button data-key="68" class="key-button">
+            <kbd>D</kbd>
+            <span class="sound-title">kick</span>
+          </button>
+          <button data-key="70" class="key-button">
+            <kbd>F</kbd>
+            <span class="sound-title">openhat</span>
+          </button>
+          <button data-key="71" class="key-button">
+            <kbd>G</kbd>
+            <span class="sound-title">boom</span>
+          </button>
+          <button data-key="72" class="key-button">
+            <kbd>H</kbd>
+            <span class="sound-title">ride</span>
+          </button>
+          <button data-key="74" class="key-button">
+            <kbd>J</kbd>
+            <span class="sound-title">snare</span>
+          </button>
+          <button data-key="75" class="key-button">
+            <kbd>K</kbd>
+            <span class="sound-title">tom</span>
+          </button>
+          <button data-key="76" class="key-button">
+            <kbd>L</kbd>
+            <span class="sound-title">tink</span>
+          </button>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+    </footer>
+    <!-- sound -->
+    <!--    FAMILY-->
+    <audio data-key="82" src="/sounds/Ceci_HoHo.mp3"></audio>
+    <audio data-key="84" src="/sounds/Molly_liteEdit_mix.mp3"></audio>
+    <audio data-key="89" src="/sounds/Jack_BingBong.mp3"></audio>
+    <audio data-key="85" src="/sounds/Jesse_HappyHolidays_elf.mp3"></audio>
+    <audio data-key="73" src="/sounds/MerryXmas.mp3"></audio>
+    <!--    PERCUSSION-->
+    <audio data-key="65" src="/sounds/clap.wav"></audio>
+    <audio data-key="83" src="/sounds/hihat.wav"></audio>
+    <audio data-key="68" src="/sounds/kick.wav"></audio>
+    <audio data-key="70" src="/sounds/openhat.wav"></audio>
+    <audio data-key="71" src="/sounds/boom.wav"></audio>
+    <audio data-key="72" src="/sounds/ride.wav"></audio>
+    <audio data-key="74" src="/sounds/snare.wav"></audio>
+    <audio data-key="75" src="/sounds/tom.wav"></audio>
+    <audio data-key="76" src="/sounds/tink.wav"></audio>
+    <!--    LOOPS-->
+    <audio data-key="86" src="/sounds/sleighbells3_low.mp3"></audio>
+    <audio data-key="66" src="/sounds/drummerBoy_low.mp3"></audio>
+    <audio data-key="78" src="/sounds/run-dmc-christmas-in-hollis_03.mp3"></audio>
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
