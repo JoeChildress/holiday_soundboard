@@ -144,13 +144,14 @@ header .instructions {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  /* border: 1px solid #d7ed75; */
+  touch-action: manipulation;
 }
 
 .button-row .key-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border: #7575ed solid 1px;
   border-radius: 0.5rem;
   height: 5rem;
@@ -163,6 +164,7 @@ header .instructions {
   background: rgba(0, 0, 0, 0.6);
   text-shadow: 0 0 0.5rem black;
   margin-bottom: 0.2rem;
+  touch-action: manipulation;
 }
 .button-row .family .key-button {
   background: rgba(4, 154, 16, 0.8);
@@ -192,6 +194,7 @@ KBD {
 .key-button .name {
   display: block;
   color: #bcbcf7;
+  width: 100%;
 }
 
 .pressed {
@@ -204,9 +207,6 @@ KBD {
   /* For tablets: */
   html {
     font-size: 16px;
-  }
-  header {
-    margin-bottom: 30px;
   }
 
   .content-wrapper {
